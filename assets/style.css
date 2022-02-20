@@ -5,7 +5,8 @@
 }
 
 body{
-    background-color: lightskyblue;
+    /* background-color: lightskyblue; */
+    background-image: linear-gradient(lightskyblue,lightblue);
 }
 
 header{
@@ -88,6 +89,10 @@ header nav ul li a:hover{
     padding: 20px 0 20px 0;
 }
 
+.section-outline p{
+    line-height: 1.4;
+    font-size: 18px;
+}
 
 .section-outline p, #work div, #contact-me div{
     width: 75%;
@@ -127,7 +132,10 @@ header nav ul li a:hover{
     position: relative;
 }
 
-
+#card1{
+    padding: 0px;
+    width: 100%;
+}
 
 #card2, #card3, #card4, #card5 {
     display: flex;
@@ -165,3 +173,51 @@ header nav ul li a:hover{
 }
 
 
+#contact-me ul{
+    display: flex;
+    align-items: center;
+}
+
+#contact-me ul li{
+    display: inline-flex;
+    justify-content: space-around;
+    padding: 27px 40px 0px 10px;
+    font-size: 20px;
+}
+
+#contact-me ul li a{
+    text-decoration: none;
+    color: rgba(264,0,255.0.3);
+    border: outset 2px black; 
+    background-color: rgba(255,255,255,0.3);
+    padding: 3px;
+    border-radius: 10px;    
+}
+
+#contact-me ul li a:hover{
+    color: black;
+    text-decoration: burlywood;
+}
+
+@media screen and (max-width: 980px){
+    header {
+        justify-content: center;;
+    }
+    header h1{
+        text-align: center;
+        width: 100%;
+    }
+
+    header nav ul{
+        width: 100%;
+        justify-content: center;;
+    }
+
+    #about-me p{
+        font-size: 23px;
+    }
+    .hero h2{
+        font-size: 36px;
+    }
+
+}
